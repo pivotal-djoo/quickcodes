@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D3843162499E24D004B1DAC /* CodeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3843152499E24D004B1DAC /* CodeType.swift */; };
+		1D3843182499E551004B1DAC /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3843172499E551004B1DAC /* SampleData.swift */; };
+		1D38431A2499E80D004B1DAC /* CodeImageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3843192499E80D004B1DAC /* CodeImageGenerator.swift */; };
 		1D4773B724988716002A72FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4773B624988716002A72FE /* AppDelegate.swift */; };
 		1D4773B924988716002A72FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4773B824988716002A72FE /* ContentView.swift */; };
 		1D4773BB24988717002A72FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4773BA24988717002A72FE /* Assets.xcassets */; };
@@ -14,6 +17,7 @@
 		1D4773C124988717002A72FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4773BF24988717002A72FE /* Main.storyboard */; };
 		1D4773CD24988717002A72FE /* quickcodesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4773CC24988717002A72FE /* quickcodesTests.swift */; };
 		1D4773D824988717002A72FE /* quickcodesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4773D724988717002A72FE /* quickcodesUITests.swift */; };
+		4D41952E842AE2719D8DE5A7 /* libPods-quickcodesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 061651D66D1A5943E2243672 /* libPods-quickcodesTests.a */; };
 		88E570DB82EE0DD2C2C41D2C /* libPods-quickcodes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7C20FEBACC926B862EF2EE /* libPods-quickcodes.a */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +61,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		061651D66D1A5943E2243672 /* libPods-quickcodesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-quickcodesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D3843082499BCBF004B1DAC /* libZXingObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libZXingObjC.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D3843152499E24D004B1DAC /* CodeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeType.swift; sourceTree = "<group>"; };
+		1D3843172499E551004B1DAC /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		1D3843192499E80D004B1DAC /* CodeImageGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeImageGenerator.swift; sourceTree = "<group>"; };
 		1D4773B324988716002A72FE /* quickcodes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quickcodes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D4773B624988716002A72FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D4773B824988716002A72FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,8 +83,10 @@
 		1D4773E82498A7C9002A72FE /* ZXingObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZXingObjC.framework; path = Carthage/Build/Mac/ZXingObjC.framework; sourceTree = "<group>"; };
 		1D4773EF2498ABAD002A72FE /* quickcodes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "quickcodes-Bridging-Header.h"; sourceTree = "<group>"; };
 		3F7C20FEBACC926B862EF2EE /* libPods-quickcodes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-quickcodes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F7831999FD901B11DB30BD5 /* Pods-quickcodesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quickcodesTests.debug.xcconfig"; path = "Target Support Files/Pods-quickcodesTests/Pods-quickcodesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C2E63B15FE753778974F8A39 /* Pods-quickcodes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quickcodes.release.xcconfig"; path = "Target Support Files/Pods-quickcodes/Pods-quickcodes.release.xcconfig"; sourceTree = "<group>"; };
 		DC1EBB4EFE036AAA6DCE55DD /* Pods-quickcodes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quickcodes.debug.xcconfig"; path = "Target Support Files/Pods-quickcodes/Pods-quickcodes.debug.xcconfig"; sourceTree = "<group>"; };
+		F9F2700CC63042D0FF7F5200 /* Pods-quickcodesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quickcodesTests.release.xcconfig"; path = "Target Support Files/Pods-quickcodesTests/Pods-quickcodesTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D41952E842AE2719D8DE5A7 /* libPods-quickcodesTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +116,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D38431B2499F00E004B1DAC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1D4773B824988716002A72FE /* ContentView.swift */,
+				1D4773BF24988717002A72FE /* Main.storyboard */,
+				1D3843192499E80D004B1DAC /* CodeImageGenerator.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1D38431C2499F03E004B1DAC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1D3843152499E24D004B1DAC /* CodeType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1D38431D2499F05E004B1DAC /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				1D3843172499E551004B1DAC /* SampleData.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		1D4773AA24988716002A72FE = {
 			isa = PBXGroup;
 			children = (
@@ -130,10 +167,11 @@
 		1D4773B524988716002A72FE /* quickcodes */ = {
 			isa = PBXGroup;
 			children = (
+				1D38431D2499F05E004B1DAC /* Constants */,
+				1D38431C2499F03E004B1DAC /* Models */,
+				1D38431B2499F00E004B1DAC /* Views */,
 				1D4773B624988716002A72FE /* AppDelegate.swift */,
-				1D4773B824988716002A72FE /* ContentView.swift */,
 				1D4773BA24988717002A72FE /* Assets.xcassets */,
-				1D4773BF24988717002A72FE /* Main.storyboard */,
 				1D4773C224988717002A72FE /* Info.plist */,
 				1D4773C324988717002A72FE /* quickcodes.entitlements */,
 				1D4773BC24988717002A72FE /* Preview Content */,
@@ -174,6 +212,7 @@
 				1D3843082499BCBF004B1DAC /* libZXingObjC.a */,
 				1D4773E82498A7C9002A72FE /* ZXingObjC.framework */,
 				3F7C20FEBACC926B862EF2EE /* libPods-quickcodes.a */,
+				061651D66D1A5943E2243672 /* libPods-quickcodesTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -183,6 +222,8 @@
 			children = (
 				DC1EBB4EFE036AAA6DCE55DD /* Pods-quickcodes.debug.xcconfig */,
 				C2E63B15FE753778974F8A39 /* Pods-quickcodes.release.xcconfig */,
+				7F7831999FD901B11DB30BD5 /* Pods-quickcodesTests.debug.xcconfig */,
+				F9F2700CC63042D0FF7F5200 /* Pods-quickcodesTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -214,6 +255,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D4773DF24988717002A72FE /* Build configuration list for PBXNativeTarget "quickcodesTests" */;
 			buildPhases = (
+				43A030A970552A33618DF9B6 /* [CP] Check Pods Manifest.lock */,
 				1D4773C424988717002A72FE /* Sources */,
 				1D4773C524988717002A72FE /* Frameworks */,
 				1D4773C624988717002A72FE /* Resources */,
@@ -317,6 +359,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		43A030A970552A33618DF9B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-quickcodesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F59DDA3D8FDB8CA01E3D05C9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -347,7 +411,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D4773B924988716002A72FE /* ContentView.swift in Sources */,
+				1D38431A2499E80D004B1DAC /* CodeImageGenerator.swift in Sources */,
+				1D3843162499E24D004B1DAC /* CodeType.swift in Sources */,
 				1D4773B724988716002A72FE /* AppDelegate.swift in Sources */,
+				1D3843182499E551004B1DAC /* SampleData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,20 +630,28 @@
 		};
 		1D4773E024988717002A72FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F7831999FD901B11DB30BD5 /* Pods-quickcodesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/ZXingObjC\"",
+				);
 				INFOPLIST_FILE = quickcodesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "\"${PODS_CONFIGURATION_BUILD_DIR}/ZXingObjC\"";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.djoo.quickcodesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/quickcodes.app/Contents/MacOS/quickcodes";
 			};
@@ -584,20 +659,28 @@
 		};
 		1D4773E124988717002A72FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9F2700CC63042D0FF7F5200 /* Pods-quickcodesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/ZXingObjC\"",
+				);
 				INFOPLIST_FILE = quickcodesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "\"${PODS_CONFIGURATION_BUILD_DIR}/ZXingObjC\"";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.djoo.quickcodesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/quickcodes.app/Contents/MacOS/quickcodes";
 			};
@@ -609,6 +692,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = quickcodesUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -617,6 +701,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.djoo.quickcodesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = quickcodes;
 			};
@@ -628,6 +713,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = quickcodesUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -636,6 +722,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.djoo.quickcodesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = quickcodes;
 			};
