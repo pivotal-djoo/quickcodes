@@ -1,18 +1,26 @@
 PODS:
+  - Nimble (8.1.1)
+  - Quick (3.0.0)
   - ZXingObjC (3.6.5):
     - ZXingObjC/All (= 3.6.5)
   - ZXingObjC/All (3.6.5)
 
 DEPENDENCIES:
+  - Nimble
+  - Quick
   - ZXingObjC (~> 3.6.4)
 
 SPEC REPOS:
   trunk:
+    - Nimble
+    - Quick
     - ZXingObjC
 
 SPEC CHECKSUMS:
+  Nimble: 5f8a2fb6fa343a7242dfdd9d42f7267419d464b2
+  Quick: 6d9559f40647bc4d510103842ef2fdd882d753e2
   ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb
 
-PODFILE CHECKSUM: 449e892c85adc2bcf92fbe12e42587269d9d9548
+PODFILE CHECKSUM: 5d40ddf3dce433c39b4a58b9d3535d3c82709f07
 
 COCOAPODS: 1.9.3

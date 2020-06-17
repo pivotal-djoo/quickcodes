@@ -3,22 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1D3843162499E24D004B1DAC /* CodeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3843152499E24D004B1DAC /* CodeType.swift */; };
 		1D3843182499E551004B1DAC /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3843172499E551004B1DAC /* SampleData.swift */; };
 		1D38431A2499E80D004B1DAC /* CodeImageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3843192499E80D004B1DAC /* CodeImageGenerator.swift */; };
+		1D38431F2499F2A6004B1DAC /* CodeTypeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38431E2499F2A6004B1DAC /* CodeTypeSpec.swift */; };
 		1D4773B724988716002A72FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4773B624988716002A72FE /* AppDelegate.swift */; };
 		1D4773B924988716002A72FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4773B824988716002A72FE /* ContentView.swift */; };
 		1D4773BB24988717002A72FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4773BA24988717002A72FE /* Assets.xcassets */; };
 		1D4773BE24988717002A72FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4773BD24988717002A72FE /* Preview Assets.xcassets */; };
 		1D4773C124988717002A72FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4773BF24988717002A72FE /* Main.storyboard */; };
-		1D4773CD24988717002A72FE /* quickcodesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4773CC24988717002A72FE /* quickcodesTests.swift */; };
 		1D4773D824988717002A72FE /* quickcodesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4773D724988717002A72FE /* quickcodesUITests.swift */; };
-		4D41952E842AE2719D8DE5A7 /* libPods-quickcodesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 061651D66D1A5943E2243672 /* libPods-quickcodesTests.a */; };
-		88E570DB82EE0DD2C2C41D2C /* libPods-quickcodes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7C20FEBACC926B862EF2EE /* libPods-quickcodes.a */; };
+		35565E955B659D9A6EFC3921 /* Pods_quickcodesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5A2AAE173A9AB7AA27E223 /* Pods_quickcodesTests.framework */; };
+		3D524C01663003CB87402B9D /* Pods_quickcodes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC670D505EA8D6731336E454 /* Pods_quickcodes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,11 +61,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		061651D66D1A5943E2243672 /* libPods-quickcodesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-quickcodesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D3843082499BCBF004B1DAC /* libZXingObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libZXingObjC.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D3843152499E24D004B1DAC /* CodeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeType.swift; sourceTree = "<group>"; };
 		1D3843172499E551004B1DAC /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		1D3843192499E80D004B1DAC /* CodeImageGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeImageGenerator.swift; sourceTree = "<group>"; };
+		1D38431E2499F2A6004B1DAC /* CodeTypeSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTypeSpec.swift; sourceTree = "<group>"; };
 		1D4773B324988716002A72FE /* quickcodes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quickcodes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D4773B624988716002A72FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D4773B824988716002A72FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,18 +75,18 @@
 		1D4773C224988717002A72FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D4773C324988717002A72FE /* quickcodes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = quickcodes.entitlements; sourceTree = "<group>"; };
 		1D4773C824988717002A72FE /* quickcodesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quickcodesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D4773CC24988717002A72FE /* quickcodesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quickcodesTests.swift; sourceTree = "<group>"; };
 		1D4773CE24988717002A72FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D4773D324988717002A72FE /* quickcodesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quickcodesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D4773D724988717002A72FE /* quickcodesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quickcodesUITests.swift; sourceTree = "<group>"; };
 		1D4773D924988717002A72FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D4773E82498A7C9002A72FE /* ZXingObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZXingObjC.framework; path = Carthage/Build/Mac/ZXingObjC.framework; sourceTree = "<group>"; };
 		1D4773EF2498ABAD002A72FE /* quickcodes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "quickcodes-Bridging-Header.h"; sourceTree = "<group>"; };
-		3F7C20FEBACC926B862EF2EE /* libPods-quickcodes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-quickcodes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F7831999FD901B11DB30BD5 /* Pods-quickcodesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quickcodesTests.debug.xcconfig"; path = "Target Support Files/Pods-quickcodesTests/Pods-quickcodesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BC670D505EA8D6731336E454 /* Pods_quickcodes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quickcodes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E63B15FE753778974F8A39 /* Pods-quickcodes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quickcodes.release.xcconfig"; path = "Target Support Files/Pods-quickcodes/Pods-quickcodes.release.xcconfig"; sourceTree = "<group>"; };
 		DC1EBB4EFE036AAA6DCE55DD /* Pods-quickcodes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quickcodes.debug.xcconfig"; path = "Target Support Files/Pods-quickcodes/Pods-quickcodes.debug.xcconfig"; sourceTree = "<group>"; };
 		F9F2700CC63042D0FF7F5200 /* Pods-quickcodesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quickcodesTests.release.xcconfig"; path = "Target Support Files/Pods-quickcodesTests/Pods-quickcodesTests.release.xcconfig"; sourceTree = "<group>"; };
+		FB5A2AAE173A9AB7AA27E223 /* Pods_quickcodesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quickcodesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88E570DB82EE0DD2C2C41D2C /* libPods-quickcodes.a in Frameworks */,
+				3D524C01663003CB87402B9D /* Pods_quickcodes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D41952E842AE2719D8DE5A7 /* libPods-quickcodesTests.a in Frameworks */,
+				35565E955B659D9A6EFC3921 /* Pods_quickcodesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,8 +191,8 @@
 		1D4773CB24988717002A72FE /* quickcodesTests */ = {
 			isa = PBXGroup;
 			children = (
-				1D4773CC24988717002A72FE /* quickcodesTests.swift */,
 				1D4773CE24988717002A72FE /* Info.plist */,
+				1D38431E2499F2A6004B1DAC /* CodeTypeSpec.swift */,
 			);
 			path = quickcodesTests;
 			sourceTree = "<group>";
@@ -211,8 +211,8 @@
 			children = (
 				1D3843082499BCBF004B1DAC /* libZXingObjC.a */,
 				1D4773E82498A7C9002A72FE /* ZXingObjC.framework */,
-				3F7C20FEBACC926B862EF2EE /* libPods-quickcodes.a */,
-				061651D66D1A5943E2243672 /* libPods-quickcodesTests.a */,
+				BC670D505EA8D6731336E454 /* Pods_quickcodes.framework */,
+				FB5A2AAE173A9AB7AA27E223 /* Pods_quickcodesTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -241,6 +241,7 @@
 				1D4773B124988716002A72FE /* Resources */,
 				1D4773EC2498A829002A72FE /* CopyFiles */,
 				1D3843102499BDBB004B1DAC /* Embed Frameworks */,
+				868D220C178EA68EC07D362E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,6 +260,7 @@
 				1D4773C424988717002A72FE /* Sources */,
 				1D4773C524988717002A72FE /* Frameworks */,
 				1D4773C624988717002A72FE /* Resources */,
+				D1A8E5FADECB5CB18211EFCC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -381,6 +383,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		868D220C178EA68EC07D362E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-quickcodes/Pods-quickcodes-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-quickcodes/Pods-quickcodes-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-quickcodes/Pods-quickcodes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1A8E5FADECB5CB18211EFCC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-quickcodesTests/Pods-quickcodesTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-quickcodesTests/Pods-quickcodesTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-quickcodesTests/Pods-quickcodesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F59DDA3D8FDB8CA01E3D05C9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -422,7 +458,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D4773CD24988717002A72FE /* quickcodesTests.swift in Sources */,
+				1D38431F2499F2A6004B1DAC /* CodeTypeSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
