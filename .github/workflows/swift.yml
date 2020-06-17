@@ -19,5 +19,5 @@ jobs:
       run: xcodebuild -workspace quickcodes.xcworkspace -scheme quickcodes -sdk macosx10.15 -destination 'platform=macOS' archive
     - uses: actions/upload-artifact@v2
       with:
-        name: latest build release
+        name: latest-build-release
         path: build/Release/quickcodes.app
