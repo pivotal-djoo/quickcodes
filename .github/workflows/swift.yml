@@ -17,7 +17,11 @@ jobs:
       run: xcodebuild -workspace quickcodes.xcworkspace -scheme quickcodes -sdk macosx10.15 -destination 'platform=macOS' test
     - name: Archive
       run: xcodebuild -workspace quickcodes.xcworkspace -scheme quickcodes -sdk macosx10.15 -destination 'platform=macOS' -archivePath quickcodes archive
+    - uses: papeloto/action-zip@v1
+      with:
+        files: quickcodes.xcarchive/Products/Applications/.
+        dest: quickcodes.app.zip
     - uses: actions/upload-artifact@v2
       with:
         name: latest-build-release
-        path: quickcodes.xcarchive/Products/Applications/quickcodes.app
+        path: quickcodes.app.zip
