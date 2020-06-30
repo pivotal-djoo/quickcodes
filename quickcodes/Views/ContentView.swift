@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(\.colorScheme) var colorScheme
     @State private var pickerIndex = 0
     
     var body: some View {
@@ -17,6 +18,7 @@ struct ContentView: View {
             CodeType.qr(UUID().uuidString),
             CodeType.datamatrix(UUID().uuidString)
         ]
+
         return VStack() {
             Picker(selection: $pickerIndex, label: Text("")) {
                 Text("Jane Doe QR").tag(0)
@@ -31,7 +33,7 @@ struct ContentView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .padding(30)
-                .background(Color.white)
+                .background(Color.clear)
                 .frame(width: 400, height: 390, alignment: .center)
             
             Text("Content")
@@ -45,6 +47,10 @@ struct ContentView: View {
                 .padding()
                 .frame(width: 400, height: 200, alignment: .top)
         }
+        .background(VisualEffectView(
+            material: colorScheme == .dark ? .dark : .light,
+            blendingMode: NSVisualEffectView.BlendingMode.behindWindow
+        ))
     }
 }
 

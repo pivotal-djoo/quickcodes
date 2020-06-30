@@ -14,7 +14,7 @@ class CodeImageGenerator {
         
         if let filter = CIFilter(name: "CIQRCodeGenerator") {
             filter.setValue(data, forKey: "inputMessage")
-            let transform = CGAffineTransform(scaleX: 3, y: 3)
+            let transform = CGAffineTransform(scaleX: 10, y: 10)
 
             if let output = filter.outputImage?.transformed(by: transform) {
                 let rep = NSCIImageRep(ciImage: output)
@@ -29,11 +29,12 @@ class CodeImageGenerator {
     public static func generateDatamatrix(from string: String) -> NSImage? {
         let writer = ZXMultiFormatWriter()
         let hints = ZXEncodeHints() as ZXEncodeHints
-        let result = try! writer.encode(string, format: kBarcodeFormatDataMatrix, width: 1000, height: 1000, hints: hints)
+        let result = try! writer.encode(string, format: kBarcodeFormatDataMatrix, width: 300, height: 300, hints: hints)
 
         if let imageRef = ZXImage.init(matrix: result) {
-            if let image = imageRef.cgimage {
-                return NSImage(cgImage: image, size: NSSize(width: 300, height: 300))
+            if let cgImage = imageRef.cgimage {
+                let image = NSImage(cgImage: cgImage, size: NSSize(width: 300, height: 300))
+                return image
             }
         }
         return nil

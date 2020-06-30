@@ -17,6 +17,7 @@
 		1D4773BE24988717002A72FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4773BD24988717002A72FE /* Preview Assets.xcassets */; };
 		1D4773C124988717002A72FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4773BF24988717002A72FE /* Main.storyboard */; };
 		1D4773D824988717002A72FE /* quickcodesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4773D724988717002A72FE /* quickcodesUITests.swift */; };
+		1DF4847E24AAE3B800B55564 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF4847D24AAE3B800B55564 /* VisualEffectView.swift */; };
 		35565E955B659D9A6EFC3921 /* Pods_quickcodesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5A2AAE173A9AB7AA27E223 /* Pods_quickcodesTests.framework */; };
 		3D524C01663003CB87402B9D /* Pods_quickcodes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC670D505EA8D6731336E454 /* Pods_quickcodes.framework */; };
 /* End PBXBuildFile section */
@@ -81,6 +82,7 @@
 		1D4773D924988717002A72FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D4773E82498A7C9002A72FE /* ZXingObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZXingObjC.framework; path = Carthage/Build/Mac/ZXingObjC.framework; sourceTree = "<group>"; };
 		1D4773EF2498ABAD002A72FE /* quickcodes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "quickcodes-Bridging-Header.h"; sourceTree = "<group>"; };
+		1DF4847D24AAE3B800B55564 /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
 		7F7831999FD901B11DB30BD5 /* Pods-quickcodesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quickcodesTests.debug.xcconfig"; path = "Target Support Files/Pods-quickcodesTests/Pods-quickcodesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BC670D505EA8D6731336E454 /* Pods_quickcodes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quickcodes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E63B15FE753778974F8A39 /* Pods-quickcodes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quickcodes.release.xcconfig"; path = "Target Support Files/Pods-quickcodes/Pods-quickcodes.release.xcconfig"; sourceTree = "<group>"; };
@@ -119,9 +121,10 @@
 		1D38431B2499F00E004B1DAC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1D4773B824988716002A72FE /* ContentView.swift */,
 				1D4773BF24988717002A72FE /* Main.storyboard */,
+				1D4773B824988716002A72FE /* ContentView.swift */,
 				1D3843192499E80D004B1DAC /* CodeImageGenerator.swift */,
+				1DF4847D24AAE3B800B55564 /* VisualEffectView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 				1D3843162499E24D004B1DAC /* CodeType.swift in Sources */,
 				1D4773B724988716002A72FE /* AppDelegate.swift in Sources */,
 				1D3843182499E551004B1DAC /* SampleData.swift in Sources */,
+				1DF4847E24AAE3B800B55564 /* VisualEffectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,9 +626,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = quickcodes/quickcodes.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"quickcodes/Preview Content\"";
+				DEVELOPMENT_TEAM = VFJZM8RP2T;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = quickcodes/Info.plist;
@@ -635,6 +641,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.djoo.quickcodes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = "quickcodes/quickcodes-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
@@ -646,9 +654,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = quickcodes/quickcodes.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"quickcodes/Preview Content\"";
+				DEVELOPMENT_TEAM = VFJZM8RP2T;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = quickcodes/Info.plist;
@@ -659,6 +669,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.djoo.quickcodes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = "quickcodes/quickcodes-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
