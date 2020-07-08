@@ -21,7 +21,9 @@ jobs:
       with:
         files: quickcodes.xcarchive/Products/Applications/.
         dest: quickcodes.app.zip
-    - uses: actions/upload-artifact@v2
+    - name: Upload build
+      if: ${{ always() }}
+      uses: actions/upload-artifact@v2
       with:
         name: latest-build-release
         path: quickcodes.app.zip
